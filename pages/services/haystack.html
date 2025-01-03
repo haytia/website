@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HayTia - ESN</title>
+    <meta
+      name="description"
+      content="HayTia : créateur d'éxpériences uniques avec des solutions sur mesures "
+    />
+    <link rel="stylesheet" href="../../styles/tw.css" />
+    <link rel="icon" href="../../assets/haytia.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/motion@11.11.13/dist/motion.js"></script>
+    <script src="../../scripts/lucide.js" defer></script>
+    <script src="../../scripts/menu.js" defer></script>
+  </head>
+  <body>
+    <nav
+      class="sticky top-0 w-full flex flex-row shadow shadow-slate-300 sm:px-5"
+    >
+      <div
+        class="h-full grow flex flex-row ml-5 sm:ml-0 py-3 gap-2 items-center"
+      >
+        <img src="../../assets/haytia.png" alt="HayTia Logo" class="size-10" />
+        <h1 class="font-noto text-md">HayTia</h1>
+      </div>
+
+      <ul
+        class="hidden h-full grow sm:flex flex-row py-3 gap-8 justify-end items-center font-noto"
+      >
+        <li><a href="../../index.html">Accueil</a></li>
+        <li><a href="../services.html">Services</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li
+          class="bg-baseLight p-2 rounded text-white font-bold flex flex-row items-center gap-2 shadow-sm shadow-baseDark"
+        >
+          <a href="../contact.html">Nous contacter</a>
+          <i data-lucide="message-circle-more"></i>
+        </li>
+      </ul>
+
+      <button id="open-menu" class="sm:hidden flex items-center mr-5 sm:mr-0">
+        <i data-lucide="list" class="size-6"></i>
+      </button>
+
+      <div id="overlay" class="hidden w-full min-h-screen fixed z-50 bg-white">
+        <div id="mobile-menu" class="flex flex-col gap-5">
+          <span class="flex flex-row items-center px-5 py-3">
+            <div class="h-full grow flex flex-row gap-2 items-center">
+              <img
+                src="../../assets/haytia.png"
+                alt="HayTia Logo"
+                class="size-10"
+              />
+              <h1 class="font-noto text-md">HayTia</h1>
+            </div>
+            <button id="close-menu" class="h-full w-fit flex items-center">
+              <i data-lucide="x" class="size-7"></i>
+            </button>
+          </span>
+
+          <ul class="grow flex flex-col gap-8 font-noto">
+            <li class="py-2 px-5 flex flex-row items-center gap-2 shadow-md">
+              <i data-lucide="house"></i><a href="../../index.html">Accueil</a>
+            </li>
+            <li class="py-2 px-5 flex flex-row items-center gap-2 shadow-md">
+              <i data-lucide="layers"></i
+              ><a href="../services.html">Services</a>
+            </li>
+            <li class="py-2 px-5 flex flex-row items-center gap-2 shadow-md">
+              <i data-lucide="rss"></i><a href="../blog.html">Blog</a>
+            </li>
+            <li class="py-2 px-5 flex flex-row items-center gap-2 shadow-md">
+              <i data-lucide="message-circle-more"></i>
+              <a href="../contact.html">Nous contacter</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
