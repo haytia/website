@@ -176,3 +176,5 @@ dist
 
 styles/tw.css
 bun.lockb
+
+.env

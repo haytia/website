@@ -178,3 +178,5 @@ bun.lockb
 assets
 robots.txt
 .husky
+
+.env
