@@ -6,7 +6,7 @@
     <title>HayTia</title>
     <meta
       name="description"
-      content="HayTia : créateur d'éxpériences uniques aves solutions sur mesures "
+      content="HayTia : créateur d'éxpériences uniques avec des solutions sur mesures "
     />
     <link rel="stylesheet" href="./styles/tw.css" />
     <link rel="icon" href="./assets/haytia.png" type="image/x-icon" />
@@ -20,6 +20,7 @@
     <script src="https://cdn.jsdelivr.net/npm/motion@11.11.13/dist/motion.js"></script>
     <script src="./scripts/lucide.js" defer></script>
     <script src="./scripts/menu.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
   </head>
   <body>
     <nav
@@ -36,7 +37,7 @@
         class="hidden h-full grow sm:flex flex-row py-3 gap-8 justify-end items-center font-noto"
       >
         <li><a href="./index.html">Accueil</a></li>
-        <li><a href="./pages/services.html">Nos services</a></li>
+        <li><a href="./pages/services.html">Services</a></li>
         <li><a href="./pages/blog.html">Blog</a></li>
         <li
           class="bg-baseLight p-2 rounded text-white font-bold flex flex-row items-center gap-2 shadow-sm shadow-baseDark"
@@ -72,7 +73,7 @@
             </li>
             <li class="py-2 px-5 flex flex-row items-center gap-2 shadow-md">
               <i data-lucide="layers"></i
-              ><a href="./pages/services.html">Nos services</a>
+              ><a href="./pages/services.html">Services</a>
             </li>
             <li class="py-2 px-5 flex flex-row items-center gap-2 shadow-md">
               <i data-lucide="rss"></i><a href="./pages/blog.html">Blog</a>
@@ -85,5 +86,46 @@
         </div>
       </div>
     </nav>
+
+    <main
+      id="main-part"
+      class="max-h-fit w-full py-14 flex md:flex-row flex-col"
+    >
+      <section
+        class="motion-preset-slide-right motion-duration-1000 flex flex-col lg:w-1/2 w-full space-y-10 font-noto px-5 justify-start"
+      >
+        <h2 class="text-4xl leading-normal">
+          Créateur d'éxpériences uniques avec des
+          <span class="md:drop-shadow-md text-baseDark rounded px-1"
+            >solutions sur mesures</span
+          >
+        </h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt at
+          aliquid quisquam voluptatum iure omnis ipsam voluptates similique
+          itaque unde exercitationem vel, illum incidunt rerum harum, commodi
+          voluptate, laudantium tempora?
+        </p>
+        <a
+          id="check-services"
+          href="./pages/services.html"
+          class="w-fit flex items-center justify-center gap-2 bg-white border border-baseLight rounded p-3 text-md shadow shadow-baseDark text-baseMedium hover:bg-baseLight hover:text-white duration-500"
+        >
+          Consulter nos services
+          <i data-lucide="chevron-right"></i>
+        </a>
+      </section>
+      <section class="hidden lg:flex lg:w-1/2 items-center justify-center">
+        <div
+          class="relative motion-preset-slide-up motion-duration-1000 max-w-md aspect-square rounded shadow shadow-baseDark"
+        >
+          <img
+            src="./assets/rocket-launch.png"
+            alt="Rocket Launch Illustration"
+            class="size-full object-contain rounded"
+          />
+        </div>
+      </section>
+    </main>
   </body>
 </html>
