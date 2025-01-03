@@ -1,0 +1,24 @@
+name: release
+
+on:
+  push:
+    branches:
+      - preprod
+
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  COMMITER_GH_TOKEN: ${{ secrets.COMMITER_GH_TOKEN }}
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: googleapis/release-please-action@v4
+        id: release
+        with:
+          token: ${{ env.COMMITER_GH_TOKEN }}
+          release-type: node
+          target-branch: preprod
