@@ -1,6 +1,7 @@
 {
   "name": "haytia-website",
   "module": "index.ts",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "tailwindcss -i ./styles/index.css -o ./styles/tw.css --watch",
@@ -19,5 +20,6 @@
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  }
+  },
+  "dependencies": {}
 }

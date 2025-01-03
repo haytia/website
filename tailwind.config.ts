@@ -7,6 +7,11 @@ export default {
       fontFamily: {
         noto: ["Noto Sans JP", "sans-serif"],
       },
+      colors: {
+        baseLight: "#02BB4F",
+        baseMedium: "#028f3c",
+        baseDark: "#015f28",
+      },
     },
   },
   plugins: [],
